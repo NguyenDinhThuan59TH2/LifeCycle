@@ -1,0 +1,9 @@
+câu 4:
+- khi khởi chạy ứng dụng: on create > on start > on resume.
+- khi bấm nút back và mở lại: on pause > on stop > on destroy - mở lại > on create > on start > on resume.
+câu 5:
+- khi bấm nút home: on pause > on stop
+- khi quay lại ứng dụng: on restart > on start > on resume.
+câu 6:
+- cần thực hiện phương thức vòng đời onPause() vì no là phương thức duy nhất đảm bảo được gọi trước khi tiến trình bị hủy - onStop và onDestroy
+  có thể không được gọi, do đó ta nên dùng onPause() để lưu dữ liệu cần giữ lại.
